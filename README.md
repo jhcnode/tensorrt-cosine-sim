@@ -134,7 +134,17 @@ if __name__ == "__main__":
 ---
 
 ## **Usage**
-Execute the script with:
+For ease of use, the script can be executed in a Kaggle environment, which provides:
+- Pre-installed dependencies (e.g., TensorRT, PyCUDA, PyTorch).
+- Access to GPUs without requiring additional setup.
+- A pre-configured environment for running the `run.py` script seamlessly.
+
+### Steps to Execute in Kaggle:
+1. Upload your script and dataset to a Kaggle notebook.
+2. Ensure the required paths (e.g., ONNX model, TensorRT engine, and dataset paths) are correctly configured in the script.
+3. Execute the script in a GPU-enabled Kaggle notebook.
+
+### Command to Run:
 ```bash
 python run.py
 ```
@@ -150,3 +160,4 @@ python run.py
 - NumPy
 - CuPy
 - scikit-learn
+
