@@ -135,7 +135,7 @@ if __name__ == "__main__":
 
 ## **Usage**
 For ease of use, the script can be executed in a Kaggle environment, which provides:
-- Pre-installed dependencies (e.g., TensorRT, PyCUDA, PyTorch).
+- Pre-installed dependencies (e.g., TensorRT, CuPy, PyTorch).
 - Access to GPUs without requiring additional setup.
 - A pre-configured environment for running the `run.py` script seamlessly.
 
@@ -143,6 +143,10 @@ For ease of use, the script can be executed in a Kaggle environment, which provi
 1. Upload your script and dataset to a Kaggle notebook.
 2. Ensure the required paths (e.g., ONNX model, TensorRT engine, and dataset paths) are correctly configured in the script.
 3. Execute the script in a GPU-enabled Kaggle notebook.
+
+### Dataset Reference:
+The dataset used in this script is referenced from Kaggle:
+[ImageNet 1K Medium Test](https://www.kaggle.com/datasets/kerrit/imagenet1kmediumtest-10k).
 
 ### Command to Run:
 ```bash
@@ -155,7 +159,6 @@ python run.py
 - PyTorch
 - torchvision
 - NVIDIA TensorRT
-- PyCUDA
 - PIL
 - NumPy
 - CuPy
